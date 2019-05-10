@@ -9,8 +9,12 @@ const config = {
     entry: { path: './client/src/index.jsx' },
     // Output
     output: {
-        path: path.resolve(__dirname, './client/dist'),
+        path: path.resolve(__dirname, './app/static/js'),
+        // path: './app/static/js',
         filename: 'bundle.js',
+    },
+    resolve:{
+        extensions:['.js','.jsx']
     },
     // Loaders
     module: {
@@ -31,8 +35,8 @@ const config = {
     // Plugins
     plugins: [
         new htmlWebpackPlugin({
-            template: './client/dist/index.html',
-            filename: 'index.html',
+            template: './app/templates/index_org.html',
+            filename: '../../templates/index.html',
             hash: true
         })
     ],

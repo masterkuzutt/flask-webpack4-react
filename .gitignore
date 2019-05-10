@@ -5,6 +5,9 @@ package-lock.json
 dist/*.js
 
 
+
+
+# --- python ---
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -100,6 +103,8 @@ ENV/
 /app.db
 # /migrations
 
+
+# --- dev ---
 # vagrant stuff
 /Vagrantfile
 /.vagrant
