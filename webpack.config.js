@@ -12,6 +12,7 @@ const config = {
         path: path.resolve(__dirname, './app/static/js'),
         // path: './app/static/js',
         filename: 'bundle.js',
+        publicPath: 'static/js',
     },
     resolve:{
         extensions:['.js','.jsx']
@@ -26,10 +27,10 @@ const config = {
                 use: ['babel-loader'],
             },
             // CSS Files
-            // {
-            //     test: /\.css$/,
-            //     use: ['style-loader', 'css-loader'],
-            // }
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            }
         ]
     },
     // Plugins
